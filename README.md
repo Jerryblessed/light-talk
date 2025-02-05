@@ -23,8 +23,8 @@ In today’s fast-paced world, getting timely access to expert advice is more cr
 
 - **Flexible Pricing Plans:**  
   - **Free Version:** 3 minutes of consultation.
-  - **Gold Plan:** 20 minutes daily for \$30/month.
-  - **Diamond Plan:** 1 hour daily for \$85/month.
+  - **Gold Plan:** 20 minutes daily for $30/month.
+  - **Diamond Plan:** 1 hour daily for $85/month.
 
 - **Verified Experts:**  
   We rigorously verify all consultants, ensuring that only qualified professionals are available for advice.
@@ -67,11 +67,13 @@ In today’s fast-paced world, getting timely access to expert advice is more cr
 ### Dependencies
 
 The project depends on:
-- `itsdangerous`
-- `flask>=0.9`
-- `six`
-- `twilio>=6.0.0`
-- `python-dotenv`
+```
+itsdangerous
+flask>=0.9
+six
+twilio>=6.0.0
+python-dotenv
+```
 
 Install dependencies via:
 
@@ -79,24 +81,18 @@ Install dependencies via:
 pip install -r requirements.txt
 ```
 
-Example requirements.txt:
+### Setup
 
-itsdangerous
-flask>=0.9
-six
-twilio>=6.0.0
-python-dotenv
-
-Setup
-
-Clone the Repository:
-
+#### Clone the Repository:
+```bash
 git clone https://github.com/yourusername/light-talk.git
 cd light-talk
+```
 
-Create a .env File:
-In the root directory, create a .env file with the following contents (replace placeholder values with your actual keys):
+#### Create a .env File:
+In the root directory, create a `.env` file with the following contents (replace placeholder values with your actual keys):
 
+```
 TWILIO_ACCOUNT_SID=YOUR_TWILIO_ACCOUNT_SID
 TWILIO_AUTH_TOKEN=YOUR_TWILIO_AUTH_TOKEN
 TWILIO_FROM=YOUR_TWILIO_PHONE_NUMBER
@@ -107,15 +103,19 @@ AZURE_OPENAI_ENDPOINT=YOUR_AZURE_OPENAI_ENDPOINT
 AZURE_OPENAI_API_KEY=YOUR_AZURE_OPENAI_API_KEY
 STT_LOCALES=en-US,de-DE,es-ES,fr-FR,it-IT,ja-JP,ko-KR,zh-CN
 TTS_VOICE=en-GB-RyanNeural
+```
 
-Run the Application:
-
+#### Run the Application:
+```bash
 python app.py
+```
 
-The application will start on http://127.0.0.1:5000/.
+The application will start on `http://127.0.0.1:5000/`.
 
-Project Structure
+---
 
+## Project Structure
+```
 light-talk/
 ├── app.py              # Main Flask application
 ├── requirements.txt    # List of Python dependencies
@@ -128,30 +128,32 @@ light-talk/
 │   └── js/
 │       └── chat.js
 └── README.md           # This file
+```
 
-Contributing
+---
+
+## Contributing
 
 We welcome contributions from the community! If you’d like to enhance Light Talk or fix a bug, please fork the repository and submit a pull request. For major changes, open an issue first to discuss what you’d like to modify.
 
-License
+---
+
+## License
 
 This project is licensed under the MIT License.
 
-Contact
+---
+
+## Contact
 
 For questions or feedback, please contact Your Name.
 
+---
 
+## Flask-Twilio
 
-
-
-
-
-
-
-
-# flask-twilio
 Make Twilio voice/SMS calls with Flask
 
-[![Build Status](https://travis-ci.org/lpsinger/flask-twilio.svg?branch=master)](https://travis-ci.org/lpsinger/flask-twilio)
+[![Build Status](https://travis-ci.org/lpsinger/flask-twilio.svg?branch=master)](https://travis-ci.org/lpsinger/flask-twilio)  
 [![Doc Status](https://readthedocs.org/projects/flask-twilio/badge/?version=latest)](http://flask-twilio.readthedocs.io/en/latest/)
+
