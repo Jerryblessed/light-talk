@@ -37,6 +37,8 @@ In today’s fast-paced world, getting timely access to expert advice is more cr
 
 ---
 
+![Light Talk Architecture](https://raw.githubusercontent.com/Jerryblessed/light-talk/refs/heads/main/diagram-export-2-5-2025-11_08_15-PM%5B1%5D.png)
+
 ## How We Built It
 
 - **Backend:**  
@@ -117,11 +119,12 @@ The application will start on `http://127.0.0.1:5000/`.
 ## Project Structure
 ```
 light-talk/
-├── app.py              # Main Flask application
+├── example.py              # Main Flask application
 ├── requirements.txt    # List of Python dependencies
 ├── .env                # Environment variables (not tracked in version control)
 ├── templates/          # HTML templates
 │   └── example.html    # Main interface for consultancy communication
+│   └── chat.html       # Main interface for avatar consultancy communication
 ├── static/             # Static assets (CSS, JS, images)
 │   ├── css/
 │   │   └── styles.css
